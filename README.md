@@ -4,11 +4,12 @@ Proyek ini mendemonstrasikan sistem real-time untuk mendeteksi, melacak, dan men
 
 Transformasi perspektif digunakan untuk mengubah tampilan menjadi bird's-eye view agar pengukuran jarak lebih akurat (dalam meter) yang kemudian dikonversi menjadi kecepatan (km/jam).
 
-## 🎥 Contoh Hasil
+## Contoh Hasil
 
-> (Ganti dengan screenshot atau GIF hasil video Anda)
+> ![gif - Made with Clipchamp (1)](https://github.com/user-attachments/assets/dbce0494-bb36-4787-aa74-f1e7987e04ce)
 
-## ✨ Fitur Utama
+
+## Fitur Utama
 
 - **Deteksi Objek Presisi Tinggi:** YOLOv8 untuk berbagai jenis kendaraan (mobil, motor, bus, truk, sepeda).
 - **Pelacakan yang Robust:** DeepSORT melacak setiap kendaraan dengan ID unik.
@@ -17,7 +18,7 @@ Transformasi perspektif digunakan untuk mengubah tampilan menjadi bird's-eye vie
 - **Analisis Data:** Data kecepatan (rata-rata, median, min, maks) disimpan ke CSV.
 - **Visualisasi:** Video output dianotasi dengan bounding box, ID, dan kecepatan.
 
-## 🔧 Cara Kerja Sistem
+## Cara Kerja Sistem
 
 1. **Seleksi ROI:** Pengguna memilih area jalan dalam video.
 2. **Kalibrasi Perspektif:** ROI diubah ke bird's-eye view, lalu dua titik diklik untuk mengukur jarak nyata (meter) terhadap jarak piksel.
@@ -29,12 +30,12 @@ Transformasi perspektif digunakan untuk mengubah tampilan menjadi bird's-eye vie
    - Dihitung jarak (meter) dan dibagi waktu antar frame (1/FPS), dikonversi ke km/jam.
 5. **Output:** Video hasil dan file CSV kecepatan tersimpan.
 
-## 📂 Struktur Proyek
+## Struktur Proyek
 
 ```
 vehicle-speed-estimation/
 ├── dataset/
-│   └── FKH02a_part_2.mp4
+│   └── Amplaz02a_part_2.mp4
 ├── out_csv/
 │   └── Amplaz02a_part2.csv
 ├── out_video/
@@ -80,15 +81,14 @@ python -m venv speed-env
 **Isi `requirements.txt`:**
 
 ```
-ultralytics
-opencv-python
-pandas
-torch
-torchvision
-torchaudio
-deep-sort-realtime
-supervision
-numpy
+ultralytics==8.3.146
+supervision==0.25.1
+deep-sort-realtime==1.3.2
+numpy==2.2.6
+torch==2.5.1
+opencv-python==4.11.0
+matplotlib==3.10.3
+
 ```
 
 Lalu jalankan:
@@ -109,7 +109,7 @@ curl -L https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8m.p
 
 Letakkan `yolov8m.pt` di folder utama.
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 1. **Letakkan Video:** Taruh di `dataset/`.
 2. **Buka Notebook:** `vehicle_speed_estimation.ipynb`
