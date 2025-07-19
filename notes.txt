@@ -1,0 +1,4 @@
+rasio meter/piksel optimal:
+FKH01a = 0.0177
+FKH02a = 0.0211
+amplaz01 = 0.0135
