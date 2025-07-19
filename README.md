@@ -6,7 +6,8 @@ Transformasi perspektif digunakan untuk mengubah tampilan menjadi bird's-eye vie
 
 ## Contoh Hasil
 
-> ![gif - Made with Clipchamp (1)](https://github.com/user-attachments/assets/dbce0494-bb36-4787-aa74-f1e7987e04ce)
+> ![gif - Made with Clipchamp (1)](https://github.com/user-attachments/assets/dbce0494-bb36-4787-aa74-f1e7987e04ce)![gif2 - Made with Clipchamp](https://github.com/user-attachments/assets/4e880b69-b13b-476a-b5a1-ccf3289326d2)
+
 
 
 ## Fitur Utama
@@ -46,7 +47,7 @@ vehicle-speed-estimation/
 └── requirements.txt
 ```
 
-## ⚙️ Instalasi & Pengaturan
+## Instalasi & Pengaturan
 
 ### 1. Clone Repository
 
